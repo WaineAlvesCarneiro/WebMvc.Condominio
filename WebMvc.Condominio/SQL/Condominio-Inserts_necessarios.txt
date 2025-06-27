@@ -1,0 +1,37 @@
+﻿INSERT INTO [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp])
+ VALUES (N'1b673850-ba2a-41b7-a0a6-bec0e57ace9f', N'AdminCond', N'ADMINCOND', N'87c797bd-36e7-4d01-953f-9f6170237874')
+
+INSERT INTO [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp])
+ VALUES (N'6b48ee9b-c3e0-4769-9c95-b23d372ecccf', N'UsuarioCond', N'USUARIOCOND', N'c8eb834a-7701-41b2-b9a9-b7f4a2d47030')
+
+INSERT INTO [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp])
+ VALUES (N'931edab8-9e4c-4efe-b36a-809df5e6ef3f', N'Suporte', N'SUPORTE', N'1dd91ff7-b584-405c-844f-29d31484baed')
+
+INSERT INTO [dbo].[Empresa]([RazaoSocial],[Fantasia],[Cnpj],[Tipo],[NomeResposavel],[Celular],[Telefone],[Email],[Cep],[Uf],[Cidade],[Endereco],[Complemento])
+ VALUES ('Waine Engenharia de Software S/A', 'Waine Engenharia de Software S/A', '01101201000110', 1, 'Waine Alves Carneiro', '62998542002', '62998542002', 'wainecarneiro@gmail.com', '74843140', 'GO', 'Goiânia', 'Rua Maceió, Res. Amazônia Park 1', 'BL 09 Apto 302')
+
+INSERT INTO [dbo].[AspNetUsers] ([Id], [EmpresaId], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed], 
+[PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled],
+ [AccessFailedCount])
+ VALUES (N'153fdc05-56a3-4f92-a599-f57ce8e3d453', 1, N'Sindico', N'SINDICO', N's@g.com', N'S@G.COM', 1, 
+ N'AQAAAAEAACcQAAAAEDJfKHkHyDBkowC9h4nfSlVElGlrGuIMyRqxllLIeyJ8p7rzP7ChcTRV79EOvhQqiQ==', N'4T3JUZISJ24GT66GOEZUVAMEGTYUYWWW', 
+ N'912d788d-a2e4-40eb-b782-f7cbe657baab', NULL, 0, 0, NULL, 1, 0)
+ 
+INSERT INTO [dbo].[AspNetUsers] ([Id], [EmpresaId], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed],
+ [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled], 
+ [AccessFailedCount]) VALUES (N'58869cd9-44f6-4ed9-bffa-3c292782b19c', 1, N'Porteiro', N'PORTEIRO', N'p@g.com', N'P@G.COM', 1, 
+ N'AQAAAAEAACcQAAAAEHw8henVU0zG+r1xDgX7JMjdr7MzEVc9IzMp+cepmLMVRHKRiQ1MVioQTMUCjgou3A==', N'3DM67A734IC4IKBEBOCHC65O5IQBXGLN', 
+ N'776b6153-715d-4f1e-9414-292fc7f76512', NULL, 0, 0, NULL, 1, 0)
+ 
+INSERT INTO [dbo].[AspNetUsers] ([Id], [EmpresaId], [UserName], [NormalizedUserName], [Email], [NormalizedEmail], [EmailConfirmed],
+ [PasswordHash], [SecurityStamp], [ConcurrencyStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEnd], [LockoutEnabled],
+ [AccessFailedCount]) VALUES (N'881a384d-b6f6-440b-b702-cf85ab1fcf25', 1, N'Suporte', N'SUPORTE', N'suporte@gmail.com', N'SUPORTE@GMAIL.COM', 1, 
+ N'AQAAAAEAACcQAAAAEChvgeNBcBFAyDXx8gQoUV8y69jGthmegWpZLl6fVdYN9RLn8JvNka6eN+EwxMe68A==', N'ZUN6D4QRMBLRUILR2FCQELJNEHHGAEEG',
+ N'a11262f7-3190-4b40-82f6-9d7b89a551ae', NULL, 0, 0, NULL, 1, 0)
+
+INSERT INTO [dbo].[AspNetUserRoles] ([UserId], [RoleId])
+ VALUES (N'153fdc05-56a3-4f92-a599-f57ce8e3d453', N'1b673850-ba2a-41b7-a0a6-bec0e57ace9f')
+INSERT INTO [dbo].[AspNetUserRoles] ([UserId], [RoleId])
+ VALUES (N'58869cd9-44f6-4ed9-bffa-3c292782b19c', N'6b48ee9b-c3e0-4769-9c95-b23d372ecccf')
+INSERT INTO [dbo].[AspNetUserRoles] ([UserId], [RoleId])
+ VALUES (N'881a384d-b6f6-440b-b702-cf85ab1fcf25', N'931edab8-9e4c-4efe-b36a-809df5e6ef3f')
